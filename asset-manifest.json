@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/project-webpage/static/css/main.eee8b706.chunk.css",
+    "main.js": "/project-webpage/static/js/main.ac0be38d.chunk.js",
+    "main.js.map": "/project-webpage/static/js/main.ac0be38d.chunk.js.map",
+    "runtime-main.js": "/project-webpage/static/js/runtime-main.5c66e6f2.js",
+    "runtime-main.js.map": "/project-webpage/static/js/runtime-main.5c66e6f2.js.map",
+    "static/js/2.b8a9cce4.chunk.js": "/project-webpage/static/js/2.b8a9cce4.chunk.js",
+    "static/js/2.b8a9cce4.chunk.js.map": "/project-webpage/static/js/2.b8a9cce4.chunk.js.map",
+    "static/js/3.522bd0ed.chunk.js": "/project-webpage/static/js/3.522bd0ed.chunk.js",
+    "static/js/3.522bd0ed.chunk.js.map": "/project-webpage/static/js/3.522bd0ed.chunk.js.map",
+    "index.html": "/project-webpage/index.html",
+    "static/css/main.eee8b706.chunk.css.map": "/project-webpage/static/css/main.eee8b706.chunk.css.map",
+    "static/js/2.b8a9cce4.chunk.js.LICENSE.txt": "/project-webpage/static/js/2.b8a9cce4.chunk.js.LICENSE.txt",
+    "static/media/exterior-5.9c6d23e9.jpg": "/project-webpage/static/media/exterior-5.9c6d23e9.jpg",
+    "static/media/exterior-6.363897ba.jpg": "/project-webpage/static/media/exterior-6.363897ba.jpg",
+    "static/media/exterior-8.d2dc6a36.jpg": "/project-webpage/static/media/exterior-8.d2dc6a36.jpg",
+    "static/media/interior-2.117f2503.jpg": "/project-webpage/static/media/interior-2.117f2503.jpg",
+    "static/media/interior-3.e9917b68.jpg": "/project-webpage/static/media/interior-3.e9917b68.jpg",
+    "static/media/undraw_Home_settings_re_pkya.5ba0fe1d.svg": "/project-webpage/static/media/undraw_Home_settings_re_pkya.5ba0fe1d.svg",
+    "static/media/undraw_best_place_r685.c8f1eb49.svg": "/project-webpage/static/media/undraw_best_place_r685.c8f1eb49.svg",
+    "static/media/undraw_choosing_house_v37h.fc368f4b.svg": "/project-webpage/static/media/undraw_choosing_house_v37h.fc368f4b.svg",
+    "static/media/undraw_projects.3db3b963.svg": "/project-webpage/static/media/undraw_projects.3db3b963.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c66e6f2.js",
+    "static/js/2.b8a9cce4.chunk.js",
+    "static/css/main.eee8b706.chunk.css",
+    "static/js/main.ac0be38d.chunk.js"
+  ]
+}
