@@ -1,0 +1,35 @@
+@import '../base/reset';
+@import '../base/variables';
+@import '../base/mixins';
+.amenities {
+    height: 45vh;
+    @include grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 1rem;
+    font-family: $font-lato;
+    color: $primary-color-blue;
+    font-size: $font-xs;
+    font-weight: 700;
+    .amenity {
+        height: 100%;
+        max-width: 100%;
+        @include flexColumn;
+    }
+    $columns-one: ( pool: 3, fitness: 5, garden: 7, play: 9, squash: 11, deck: 13, club: 15);
+    @each $name,
+    $number in $columns-one {
+        .#{$name} {
+            grid-column: $number;
+            grid-row: 2;
+        }
+    }
+    $columns-two: ( shopping: 3, walking: 5, jogging: 7, cycling: 9, wellness: 11, medical: 13, helipad: 15);
+    @each $name,
+    $number in $columns-two {
+        .#{$name} {
+            grid-column: $number;
+            grid-row: 3;
+        }
+    }
+}

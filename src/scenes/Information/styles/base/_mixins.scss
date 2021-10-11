@@ -1,0 +1,26 @@
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    @include flexRow;
+    flex-direction: column;
+}
+
+@mixin grid {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin buttonBorder {
+    border: 3px solid $primary-color-blue;
+    border-radius: .4rem;
+}
+
+@mixin frame {
+    border: 2px solid $primary-color-blue;
+    border-radius: 12px;
+}

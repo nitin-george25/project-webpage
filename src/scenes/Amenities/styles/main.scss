@@ -1,0 +1,92 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/mixins';
+.gallery {
+    height: 90vh;
+    width: 100%;
+    @include grid;
+    grid-template-columns: $grid-columns;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: .4rem;
+    .card {
+        height: 100%;
+        position: relative;
+        background: $color-white;
+        #card-image {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: opacity ease-out 500ms;
+        }
+        .card-text {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            @include flexColumn;
+            color: $primary-color-blue;
+            opacity: 0;
+            transition: opacity ease-out 500ms;
+            font-weight: 700;
+            .card-title {
+                font-size: $font-m;
+                font-family: $font-base;
+            }
+            .card-info {
+                font-size: $font-xs;
+                width: 50%;
+                text-align: center;
+            }
+        }
+        &:hover .card-text {
+            opacity: 1;
+        }
+        &:hover #card-image {
+            opacity: 0.2;
+        }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 1.25rem;
+            left: 1.25rem;
+            right: 1.25rem;
+            bottom: 1.25rem;
+        }
+        &::before {
+            border-top: 2px solid $primary-color-blue;
+            border-bottom: 2px solid $primary-color-blue;
+            transform: scale(0, 1);
+            transition: transform ease-out 500ms;
+        }
+        &:hover::before {
+            transform: scale(1, 1);
+        }
+        &::after {
+            border-left: 2px solid $primary-color-blue;
+            border-right: 2px solid $primary-color-blue;
+            transform: scaleY(0);
+            transition: transform ease-out 350ms;
+        }
+        &:hover::after {
+            transform: scaleY(1);
+        }
+    }
+    #luxury {
+        grid-column: 2/span 4;
+        grid-row: 1/span 4;
+    }
+    #club {
+        grid-column: 6/span 5;
+        grid-row: 1/span 2;
+    }
+    #kitchen {
+        grid-column: 6/span 5;
+        grid-row: 3/span 2;
+    }
+    #wellness-centres {
+        grid-column: 11/span 4;
+        grid-row: 1/span 4;
+    }
+}

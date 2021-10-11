@@ -1,0 +1,54 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/mixins';
+@import './components/illustration';
+.information {
+    height: 60vh;
+    @include grid;
+    grid-template-columns: repeat(17, 1fr);
+    font-family: $font-lato;
+    color: $primary-color-blue;
+    font-size: $font-m;
+    .info-frame {
+        height: 60%;
+        padding: 10%;
+        @include flexColumn;
+        gap: .4rem;
+        font-weight: 700;
+        text-align: center;
+        background: $color-blue-300;
+        border-radius: 10px;
+        h4 {
+            grid-row: 1;
+            font-size: $font-sm;
+        }
+    }
+    .projects {
+        grid-column: 2/span 3;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .places {
+        grid-column: 6/span 3;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .awards {
+        grid-column: 10/span 3;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .luxury {
+        grid-column: 14/span 3;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.illustration {
+    flex: 1 1 50%;
+    width: 80%;
+}
+
+.comment {
+    text-align: center;
+    width: 100%;
+    font-size: $font-xs;
+}
+
+.info-text {
+    flex: 1 1 50%;
+    grid-template-rows: repeat(3, 1fr);
+}

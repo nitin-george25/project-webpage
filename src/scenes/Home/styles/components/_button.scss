@@ -1,0 +1,33 @@
+@import '../base/variables';
+@import '../base/mixins';
+button#contact {
+    padding: .5rem 1rem;
+    background: none;
+    @include buttonBorder;
+    color: $primary-color-blue;
+    font-family: $font-lato;
+    font-size: $font-xs;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-color: $primary-color-blue;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 250ms ease-out;
+    }
+    &:hover {
+        cursor: pointer;
+        color: $color-white;
+    }
+    &:hover::before {
+        transform: scaleX(1);
+    }
+}

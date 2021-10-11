@@ -1,0 +1,44 @@
+@import './base/reset';
+@import './base/variables';
+@import './base/mixins';
+@import './components/button';
+.home {
+    @include flexRow;
+    font-family: $font-base;
+    height: 90vh;
+    * {
+        flex-basis: 100%;
+    }
+    .landing-image {
+        height: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .info {
+        height: 100%;
+        @include grid;
+        grid-template-columns: $grid-columns;
+        grid-template-rows: repeat(11, 1fr);
+        .title {
+            font-size: $font-xl;
+            font-weight: 700;
+            grid-column: 3/span 11;
+            grid-row: 4/span 3;
+            color: $primary-color-blue;
+            line-height: 45pt;
+        }
+        .text-2 {
+            grid-column: 3/span 7;
+            grid-row: 7;
+            color: $primary-color-blue;
+            opacity: 75%;
+            font-family: $font-lato;
+        }
+        button {
+            grid-column: 3/span 4;
+            grid-row: 9;
+        }
+    }
+}

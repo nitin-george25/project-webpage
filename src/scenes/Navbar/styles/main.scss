@@ -1,0 +1,60 @@
+@import './base/reset';
+@import './components/button';
+@import './base/mixins';
+@import './base/variables';
+.navbar {
+    position: fixed;
+    z-index: 1;
+    height: 64px;
+    width: 100vw;
+    @include grid;
+    grid-template-columns: $grid-columns;
+    font-family: $font-lato;
+    font-size: $font-xs;
+    font-weight: 700;
+    color: $primary-color-blue;
+    background: rgba($color: $color-blue-300, $alpha: 0.25);
+    * {
+        box-sizing: border-box;
+    }
+    .logo {
+        grid-column: 2/span 3;
+        h4 {
+            height: fit-content;
+            width: fit-content;
+            padding: 0.2rem 1.4rem;
+            background-color: $primary-color-blue;
+            border-radius: 12px;
+            color: $color-blue-300;
+            font-size: $font-m;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $primary-color-blue;
+    }
+    a:hover {
+        cursor: pointer;
+        opacity: 75%;
+    }
+}
+
+#home {
+    grid-column: 7;
+    text-align: right;
+}
+
+#projects {
+    grid-column: 8/span 2;
+    text-align: center;
+}
+
+#about {
+    grid-column: 10;
+    text-align: left;
+}
+
+.contact {
+    grid-column: 13/span 2;
+    text-align: right;
+}
